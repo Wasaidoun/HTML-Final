@@ -1,0 +1,45 @@
+
+/* Navbar styling */
+nav ul {
+    display: flex;
+    list-style-type: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px; /* Adds rounded corners */
+}
+
+nav ul li a:hover {
+    background-color: #ddd; /* Change background on hover */
+    color: black;
+}
+
+.logo img {
+    height: 100%; /* Adjusts height to fit container */
+    max-height: 120px; /* Limits max height */
+    width: auto;
+}
+
+.orders img {
+    height: 100%; /* Adjusts height to fit container */
+    max-height: 120px; /* Limits max height */
+    width: auto;
+}
+
+.title {
+    flex-grow: 1; /* Allows it to take available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em; /* Adjust font size */
+}
