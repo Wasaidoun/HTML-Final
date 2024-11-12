@@ -1,51 +1,89 @@
 
-/* Navbar styling */
-nav ul {
-    display: flex;
-    list-style-type: none; /* Removes bullet points */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-nav ul li {
-    padding: 0 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: black;
-    display: block;
-    padding: 5px 10px;
-    border-radius: 5px; /* Adds rounded corners */
-}
-
-nav ul li a:hover {
-    background-color: #ddd; /* Change background on hover */
-    color: black;
-}
-
-.logo img {
-    height: 100%; /* Adjusts height to fit container */
-    max-height: 120px; /* Limits max height */
-    width: auto;
-}
-
-.orders img {
-    height: 100%; /* Adjusts height to fit container */
-    max-height: 120px; /* Limits max height */
-    width: auto;
-}
-
-.title {
-    flex-grow: 1; /* Allows it to take available space */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em; /* Adjust font size */
-}
-
+/* Styled the header */
 .header {
-    background-color: #683608;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #8B4513; /* SaddleBrown */
+    color: #FDF5E6; /* Ivory */
+    font-family: Arial, sans-serif;
 }
-    
 
+/* Logo sizing */
+.header .logo img {
+    width: 80px;
+    height: auto;
+}
+
+/* Title styling*/
+.header .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD700; /* Golden */
+}
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav .links {
+    display: flex;
+    gap: 15px;
+}
+
+nav .links a {
+    text-decoration: none;
+    color: #FDF5E6;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+nav .links a:hover {
+    color: #FFD700;
+}
+
+/* This is the drop down menu */
+.header-nav-item {
+    position: relative;
+}
+
+.header-nav-item > a {
+    cursor: pointer;
+}
+
+.header-nav-folder {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #D2691E; 
+    padding: 10px 0;
+    min-width: 150px;
+    border-radius: 4px;
+}
+
+.header-nav-folder a {
+    display: block;
+    padding: 8px 15px;
+    color: #FDF5E6;
+    text-decoration: none;
+}
+
+.header-nav-folder a:hover {
+    background-color: #CD853F; 
+    color: #FFF5EE; 
+}
+
+/* Shows the Dropdown menu when hovering */
+.header-nav-item:hover .header-nav-folder {
+    display: block;
+}
