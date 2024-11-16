@@ -11,8 +11,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px 30px;
-    background-color: #8B4513; /* SaddleBrown */
-    color: #FDF5E6; /* Ivory */
+    
+    color: #5f4109; /* Ivory */
     font-family: Arial, sans-serif;
 }
 
@@ -44,7 +44,7 @@ nav .links div:first-child {
 
 nav .links a {
     text-decoration: none;
-    color: #FDF5E6;
+    color: #836224;
     font-weight: 500;
     font-size: 18px; /* Slightly larger text */
 }
@@ -56,6 +56,7 @@ nav .links a:hover {
 /* Dropdown Menu */
 .header-nav-item {
     position: relative;
+    z-index: 10;
 }
 
 .header-nav-item > a {
@@ -89,3 +90,48 @@ nav .links a:hover {
 .header-nav-item:hover .header-nav-folder {
     display: block;
 }
+
+
+.background {
+    position: relative;
+    width: 100%; /* Adjust as needed */
+    height: 100vh; /* Full viewport height, adjust as needed */
+    overflow: hidden;
+  }
+  
+  .background img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image fills the div properly */
+  }
+  
+  .background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Change tint color here */
+    pointer-events: none; /* Allows interaction with the image */
+  }
+
+  .background {
+    height: auto; /* Adjusts the height to fit the image */
+    overflow: hidden; /* Ensures no extra content spills over */
+  }
+  
+  
+  
+  .text-container {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 40%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Aligns the center point */
+    z-index: 2;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+  }
+  
