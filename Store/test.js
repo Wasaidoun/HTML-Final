@@ -7,3 +7,4 @@ function res(event) {
     const email1 = document.getElementById('email').value;
     document.getElementById('out1').innerHTML = "Password reset, sent to " + email1;
 }
+
