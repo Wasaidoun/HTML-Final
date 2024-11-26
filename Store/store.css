@@ -1,4 +1,4 @@
-/* Background image CSS */
+/* Background image CSS 
 .background {
     position: relative;
     width: 100%; 
@@ -40,7 +40,107 @@
     color: white;
     font-size: 2rem;
   }
+  */
+  /* Container for the hero section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 50vh; /* Full viewport height */
+  overflow: hidden;
+  display: flex; /* Flexbox for centering text */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  text-align: center; /* Center align the text within the container */
+}
+
+/* Hero background image styling */
+.hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Ensure the image covers the entire area without distortion */
+  z-index: 1; /* Place image behind content */
+}
+
+/* Dark overlay for better text visibility */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+  z-index: 2; /* Place above image but below text */
+}
+
+/* Text container styling */
+.text-container {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  z-index: 3; /* Place text above image and overlay */
+  color: white;
+  text-align: center; /* Align text in the center */
+  padding: 0 20px; /* Add some padding to prevent text from touching the edges */
+}
+
+/* Headline styling */
+.text-container h1 {
+  font-size: 3rem; /* Adjust size for prominence */
+  font-weight: bold;
+  margin-bottom: 15px; /* Add space below the headline */
   
+}
+
+/* Paragraph styling */
+.text-container p {
+  font-size: 1.5rem; /* Adjust font size for readability */
+  margin: 10px 0; /* Add spacing between lines */
+ 
+}
+
+@media (max-width: 480px) {
+  .text-container h1 {
+      font-size: 1.5rem; /* Small headline for mobile */
+  }
+
+  .text-container p {
+      font-size: 1rem; /* Small paragraph for mobile */
+  }
+
+}
+
+
+
+/* Call-to-action button */
+.cta-button {
+  margin-top: 20px; /* Space above the button */
+  padding: 10px 20px; /* Button padding */
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: #7e5710; /* Bright pink color for the button */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Button shadow */
+}
+
+/* Hover effect for the button */
+.cta-button:hover {
+  background-color: #5f420d; /* Slightly darker pink on hover */
+}
+
+/* Page CSS*/
+.front-page {
+  background-color: #7e5710;
+}
+
+
+
   /* Featured items CSS */
   .grid-item {
     font-family: Arial, Helvetica, sans-serif;

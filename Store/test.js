@@ -8,3 +8,4 @@ function res(event) {
     document.getElementById('out1').innerHTML = "Password reset, sent to " + email1;
 }
 
+
