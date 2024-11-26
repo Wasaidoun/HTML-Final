@@ -1,0 +1,101 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    
+    color: #5f4109; /* Ivory */
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the logo */
+.header .logo img {
+    width: 150px; /* Increased size */
+    height: auto;
+}
+
+/* Styling the navigation */
+nav {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Links Section */
+.links {
+    display: flex;
+    gap: 60px;
+    flex: 1;
+    justify-content: left; /* Align items to the right */
+    margin-left: 80px;
+    
+}
+
+
+.links a {
+    text-decoration: none;
+    color: #836224;
+    font-weight: 500;
+    font-size: 18px; /* Slightly larger text */
+}
+
+.links a:hover {
+    color: #FFD700;
+}
+
+/* Dropdown Menu */
+.header-nav-item {
+    position: relative;
+    z-index: 10;
+}
+
+.header-nav-item > a {
+    cursor: pointer;
+}
+
+.header-nav-folder {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    padding: 10px 0;
+    min-width: 150px;
+    border-radius: 4px;
+}
+
+.header-nav-folder a {
+    display: block;
+    padding: 8px 15px;
+    color: #5f4109;
+    text-decoration: none;
+}
+
+.header-nav-folder a:hover {
+    background-color: #CD853F; 
+    color: #5f4109;
+}
+
+/* Show Dropdown on Hover */
+.header-nav-item:hover .header-nav-folder {
+    display: block;
+}
+
+.instagram-logo img{
+    height: 35px;
+    width: auto;
+    justify-content: right;
+  }
+
+  .links > #loginlink {
+    justify-content: right;
+  }
