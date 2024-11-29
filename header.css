@@ -21,6 +21,13 @@
     width: 150px; /* Increased size */
     height: auto;
 }
+@media (max-width: 480px) {
+    .header .logo img {
+        width: 100px;
+        height: auto;
+    }
+    
+  }
 
 /* Styling the navigation */
 nav {
@@ -98,4 +105,43 @@ nav {
 
   .links > #loginlink {
     justify-content: right;
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    
+    
+  }
+  
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(44, 42, 42);
+    
+  }
+  
+  @media (max-width: 768px) {
+    .links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+  
+    .links.active {
+        display: flex; /* Show menu when active */
+    }
+  
+    .hamburger {
+        display: flex; /* Show hamburger icon on mobile */
+       position: absolute;
+       right: 5%;
+    }
   }
