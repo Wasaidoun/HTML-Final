@@ -22,29 +22,44 @@
 <body>
     <header class="header">
         <div class="logo">
-          <a href="../Store\index.html"><img src="../Images/Store Logo.png" alt ="Logo"></a>
+            <a href="../Store\index.html"><img src="../Images/Store Logo.png" alt="Logo"></a>
         </div>
-        
-        <nav>
-            
-                <div class="links">
+
+        <nav class="navbar">
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <ul class="links" id="links">
                 <div><a href="" class="home-link"><b> Home</b></a></div>
-                
+
                 <div class="header-nav-item">
+
                     <a href="">Shop our items</a>
                     <div class="header-nav-folder">
                         <a href="" tabindex="0">All</a>
-                       <a href="" tabindex="0">Wagons</a>
-                       <a href="" tabindex="0">Saddles</a>
-                       <a href="" tabindex="0">Horse Shoes</a>
-                       <a href="" tabindex="0">Armor</a>
-                       
+                        <a href="wagon.html" tabindex="0">Wagons</a>
+                        <a href="Saddle.html" tabindex="0">Saddles</a>
+                        <a href="Horseshoe.html" tabindex="0">Horse Shoes</a>
+                        <a href="armor.html" tabindex="0">Armor</a>
+
                     </div>
                 </div>
 
-    <section class="title">
-        <h1>Horsemart</h1>
-    </section>
+                <div><a href="bio.html">Our bio</a></div>
+                <div><a href="contact.html">Contact</a></div>
+
+                <a href="index.html" id="loginlink">Login</a>
+                </div>
+                <div class="instagram-logo">
+
+                    <a href=""><img src="../Images/Instagram logo.png" alt="Instagram logo"></a>
+                </div>
+            </ul>
+        </nav>
+
 
     <main>
             <div class="login">
@@ -64,7 +79,6 @@
         <p id="out1"></p>
     </main>
 
-    <!-- JS File -->
-    <script src="sign.js"></script>
+  
 </body>
 </html>
