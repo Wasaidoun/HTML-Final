@@ -3,6 +3,8 @@ $(document).ready(function () {
   $("#header").load("../includes/header.html", function () {
       console.log("Header loaded.");
   });
+  $("footer").load("../includes/footer.html", function(){
+  });
 
   const imageContainer = document.querySelector("main"); // Holds all the images
   const detailsContainer = document.getElementById("detailsContainer"); // Details section
