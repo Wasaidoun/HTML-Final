@@ -1,3 +1,9 @@
+$(document).ready(function(){
+   $(function(){
+  $("#header").load("../includes/header.html");
+   });
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const imageContainer = document.querySelector("main"); // This holds all the images
     const detailsContainer = document.getElementById("detailsContainer"); // The section where item details are shown
@@ -70,4 +76,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const forgotForm = document.getElementById('forgotPasswordForm'); // Get the form
     forgotForm.addEventListener('submit', forgotpass); // Attach the submit event listener
+});
+
+// JavaScript to hide and show the header on scroll
+let lastScrollTop = 0; // Keep track of the last scroll position
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (currentScroll > lastScrollTop) {
+    // Scrolling down - hide the header
+    header.style.transform = 'translateY(-100%)';
+  } else {
+    // Scrolling up - show the header
+    header.style.transform = 'translateY(0)';
+  }
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative values
+});
+
 });
