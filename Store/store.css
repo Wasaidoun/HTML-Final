@@ -62,11 +62,13 @@ nav {
 .header-nav-item {
   position: relative;
   z-index: 1000;
+  text-decoration: none;
 }
 
 .header-nav-item>a {
   cursor: pointer;
   z-index: 1000;
+  text-decoration: none;
 }
 
 .header-nav-folder {
@@ -79,6 +81,7 @@ nav {
   min-width: 150px;
   border-radius: 4px;
   z-index: 10;
+  text-decoration: none;
 }
 
 .header-nav-folder a {
