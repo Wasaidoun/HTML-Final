@@ -110,42 +110,7 @@ nav {
   justify-content: right;
 }
 
-/* Hamburger Menu */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
 
-.hamburger .bar {
-  width: 25px;
-  height: 3px;
-  background-color: rgb(44, 42, 42);
-}
-
-@media (max-width: 768px) {
-  .links {
-    display: none;
-    flex-direction: column;
-    background-color: #333;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .links.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: flex;
-    position: absolute;
-    right: 5%;
-  }
-}
 
 /* Hero Section */
 .hero {
@@ -337,7 +302,7 @@ nav {
   }
 
   #footer a {
-      display: block; 
+      display: inline-block; 
       margin: 5px 0; 
   }
 }
@@ -663,3 +628,70 @@ body {
       padding: 15px;
   }
 }
+
+/* delete under */
+/* Basic styling for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Sidebar Styles */
+.links {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links li {
+  margin: 10px;
+}
+
+/* For smaller screen sizes (Mobile view), turn the menu into a sidebar */
+@media (max-width: 768px) {
+  .navbar {
+      position: relative;
+  }
+  
+  .links {
+      display: none; /* Hide the links by default */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px; /* Sidebar width */
+      height: 100vh; /* Full height */
+      background-color: #333;
+      flex-direction: column;
+      padding-top: 50px; /* Add padding to the top */
+      z-index: 999;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .links.active {
+      display: flex; /* Show the sidebar when it's active */
+  }
+
+  .links li {
+      margin: 20px 0;
+  }
+
+  .header-nav-folder {
+      display: block;
+  }
+
+  .instagram-logo img {
+      width: 30px;
+      height: 30px;
+  }
+}
+
+/* When the sidebar is active, add an overlay effect */
+@media (max-width: 768px) {
+  body.active {
+      overflow: hidden; /* Prevent scrolling when sidebar is open */
+  }
+}
+

@@ -93,4 +93,15 @@ $(document).ready(function () {
 
       lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
   });
+
+
+ // Function to toggle the sidebar visibility
+document.getElementById('hamburger').addEventListener('click', function() {
+    const links = document.getElementById('links');
+    links.classList.toggle('active');
+    document.body.classList.toggle('active');
+});
+
+
+
 });
