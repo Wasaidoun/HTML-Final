@@ -23,23 +23,26 @@
 
 
 <body>
-    <header id="header"></header>
+    <header class="header" id="header"></header>
 
-    <main>
-        <h1>
+    <main class="create-account-container">
+        <h1 class="create-account-title">
             Create account below:
         </h1>
-        <form method="get"><!--We did not do any js for this, would require data base, so you get a refresh lol-->
-            <div class="login">
-                <input type="email" placeholder="Enter Email:">
-                <input type="password" placeholder="Enter Password:">
-                <input type="submit" value="Submit">
+        <form class="create-account-form" method="get">
+            
+            <div class="create-account-inputs">
+                <input type="email" class="create-account-input" placeholder="Enter Email">
+                <input type="password" class="create-account-input" placeholder="Enter Password">
+                <input type="submit" class="create-account-submit" value="Submit">
             </div>
         </form>
-        <a href="forgot.html">
-            <li>Forgot Password?</li>
+        
+        <a href="forgot.html" class="create-account-forgot">
+            Forgot Password?
         </a>
     </main>
+    
 
 </body>
 <footer id="footer"></footer>
