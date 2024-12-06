@@ -18,47 +18,24 @@
     <link rel="stylesheet" href="./store.css">
     <link rel="stylesheet" href="../header.css">
     <link rel="stylesheet" href="../footer.css">
-    <script src="all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/all.js"></script>
 </head>
 
+
 <body>
-    <header class="header">
-        <div class="logo">
-            <a href="../Store\index.html"><img src="../Images/Store Logo.png" alt="Logo"></a>
-        </div>
-
-        <nav>
-
-            <div class="links">
-                <div><a href="index.html" class="home-link"><b> Home</b></a></div>
-
-                <div class="header-nav-item">
-                    <a href="">Shop our items</a>
-                    <div class="header-nav-folder">
-                        <a href="all.html" tabindex="0">All</a>
-                        <a href="wagon.html" tabindex="0">Wagons</a>
-                        <a href="Saddle.html" tabindex="0">Saddles</a>
-                        <a href="Horseshoe.html" tabindex="0">Horse Shoes</a>
-                        <a href="armor.html" tabindex="0">Armor</a>
-
-                    </div>
-                </div>
-
-                <div><a href="">Our bio</a></div>
-                <div><a href="">Contact</a></div>
-
-                <a href="Sign in.html" id="loginlink">Login</a>
-            </div>
-            <div class="instagram-logo">
-
-                <a href=""><img src="../Images/Instagram logo.png" alt="Instagram logo"></a>
-            </div>
-        </nav>
-
-    </header>
-
+    <header class="header" id="header"></header>
 
     <main>
+        <div class="hero">
+            <img src="../Images/Background_image2.jpg" alt="Background image">
+            <div class="text-container">
+
+                <h1>Shop from our collection</h1>
+
+
+            </div>
+        </div><!--Start of horseshoe pics-->
         <div class="grid-item">
             <a href="#"><img src="../Images/Aluminum Horse Shoe.jpg" alt="Aluminum"></a>
             <div class="grid-main-meta">
@@ -111,7 +88,7 @@
         </div>
 
     </main>
-    <div class="displayout">
+    <div class="displayout"><!--Display content for the selected image-->
         <div id="detailsContainer" style="display: none;">
             <img id="selectedImage" src="" alt="Selected Item">
             <p>Item Name: <span id="itemName"></span></p>
@@ -120,12 +97,7 @@
             <p>Total: <span id="itemTotal"></span></p>
         </div>
     </div>
-
-
-
-
-
-
+    <footer id="footer"></footer>
 
 </body>
 

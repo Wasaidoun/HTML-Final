@@ -16,59 +16,23 @@
 
     <!-- Add Custom CSS -->
     <link rel="stylesheet" href="./store.css">
-    <link rel="stylesheet" href="../header.css">
-    <link rel="stylesheet" href="../footer.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/all.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo">
-            <a href="../Store/index.html"><img src="../Images/Store Logo.png" alt="Logo"></a>
-        </div>
-
-        <nav class="navbar">
-            <div class="hamburger" id="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-
-            <ul class="links" id="links">
-                <div><a href="" class="home-link"><b> Home</b></a></div>
-
-                <div class="header-nav-item">
-                    <a href="">Shop our items</a>
-                    <div class="header-nav-folder">
-                        <a href="" tabindex="0">All</a>
-                        <a href="wagon.html" tabindex="0">Wagons</a>
-                        <a href="Saddle.html" tabindex="0">Saddles</a>
-                        <a href="Horseshoe.html" tabindex="0">Horse Shoes</a>
-                        <a href="armor.html" tabindex="0">Armor</a>
-                    </div>
-                </div>
-
-                <div><a href="bio.html">Our bio</a></div>
-                <div><a href="contact.html">Contact</a></div>
-
-                <a href="index.html" id="loginlink">Login</a>
-                </div>
-                <div class="instagram-logo">
-                    <a href=""><img src="../Images/Instagram logo.png" alt="Instagram logo"></a>
-                </div>
-            </ul>
-        </nav>
-    </header>
+    <header class="header" id="header"></header>
 
     <main>
         <div class="hero">
-            <img src="../Images/Background image.jpg" alt="Background image">
+            <img src="../Images/Background_image.jpg" alt="Background image">
             <div class="text-container">
                 <h1>Forgot Your Password?</h1>
                 <p>Enter your email address below to receive a password reset link.</p>
             </div>
         </div>
 
-        <div class="forgot-password-form">
+        <div class="forgot-password-form"><!--Password form(very buggy)-->
             <form id="forgotPasswordForm">
                 <label for="email">Email Address:</label>
                 <input id="email" type="email" placeholder="Enter email" required>
@@ -78,15 +42,8 @@
         </div>
     </main>
 
-    <footer>
-        <p>2024 Horsemart. All Rights Reserved.</p>
-    </footer>
+    <footer id="footer"></footer>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="../header.js"></script>
-    <script src="all.js"></script>
-  
 </body>
 
 </html>
