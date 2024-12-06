@@ -695,3 +695,204 @@ body {
   }
 }
 
+
+/* Container styling for the create account page */
+.create-account-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+ 
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Arial', serif; 
+}
+
+/* Title styling */
+.create-account-title {
+  font-size: 2rem;
+  color: #5a3d2b; 
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form styling */
+.create-account-form {
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  border: 1px solid #d2b48c; 
+}
+
+/* Input fields styling */
+.create-account-input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #c19a6b;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: #fdf8f4; 
+  color: #5a3d2b; 
+}
+
+/* Input fields focus effect */
+.create-account-input:focus {
+  outline: none;
+  border-color: #8b5e3c; 
+  box-shadow: 0 0 5px rgba(139, 94, 60, 0.5); 
+}
+
+/* Submit button styling */
+.create-account-submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #8b5e3c; 
+  color: #ffffff; 
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Submit button hover effect */
+.create-account-submit:hover {
+  background-color: #5a3d2b; 
+  transform: scale(1.05); 
+}
+
+/* Forgot password link styling */
+.create-account-forgot {
+  margin-top: 15px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #8b5e3c;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for forgot password link */
+.create-account-forgot:hover {
+  color: #5a3d2b; 
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .create-account-container {
+      padding: 10px;
+  }
+
+  .create-account-title {
+      font-size: 1.5rem;
+  }
+
+  .create-account-form {
+      padding: 15px;
+  }
+
+  .create-account-input,
+  .create-account-submit {
+      font-size: 0.9rem;
+  }
+}
+
+/* Container for the forgot password form */
+.forgot-password-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Forgot password form styling */
+.forgot-password-form {
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff; 
+  border: 1px solid #d3c4b1; 
+  border-radius: 8px; 
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Inner form elements */
+.forgot-password-form-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 15px;
+}
+
+/* Label styling */
+.forgot-password-label {
+  font-size: 1rem;
+  color: #5a3d2b;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+/* Input field styling */
+.forgot-password-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #bca38c; 
+  border-radius: 5px;
+  background-color: #fdf8f4; 
+  box-sizing: border-box;
+  color: #5a3d2b; 
+}
+
+.forgot-password-input:focus {
+  outline: none;
+  border-color: #8b5e3c; 
+  box-shadow: 0 0 5px rgba(139, 94, 60, 0.5); 
+}
+
+/* Button styling */
+.forgot-password-button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #8b5e3c; 
+  color: #ffffff; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.forgot-password-button:hover {
+  background-color: #5a3d2b; 
+  transform: scale(1.05); 
+}
+
+/* Message styling */
+.forgot-password-message {
+  font-size: 0.9rem;
+  color: #5a3d2b;
+  margin-top: 15px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .forgot-password-form {
+      padding: 15px;
+  }
+
+  .forgot-password-input,
+  .forgot-password-button {
+      font-size: 0.9rem;
+  }
+}
